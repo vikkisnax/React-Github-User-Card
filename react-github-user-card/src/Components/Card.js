@@ -1,13 +1,14 @@
 import React from "react";
 
 function Card(props) {
-    //step 5 - see when it's rendering and check if props was passed down  
-    console.log("Card component is rendering")
-    console.log(props.card)
+    //step 5 - see when it's rendering and check if props was passed down ... still empty but component works
+    console.log("Rendering Card component")
+    console.log("props", props)
 
     return (
         <div>
-            <h4>My Github Follow List</h4>
+            {/* stretch 1h.a use search prop (searchUser state) to show name of who you search -- moved it to App so it's above the search bar */}
+            {/* <h4>{props.search}'s Github Follow List</h4> */}
 
             {/* step 6: map over the objects */}
             {/* for each card, I want to get and display its id, avatar, and login info */}
